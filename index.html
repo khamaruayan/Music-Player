@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="player-container">
+        <!--Song-->
+        <div class="image-container">
+            <img src="./images/music1.jpeg" alt="Album Art">
+        </div>
+        <!--Title-->
+        <h2 id="title">Love Song</h2>
+        <h3 id="artist">Shreya Ghosal</h3>
+        <!--Audio-->
+        <audio src="./music/music1.mp3"></audio>
+
+        <!--Progress-->
+        <div class="Progress-container" id="Progress-container">
+            <div class="Process" id="Process"></div>
+            <div class="duration-wrapper">
+                <span id="current-time">0:00</span>
+                <span id="duration">6:00</span>
+            </div>
+        </div>
+        <!--Controls-->
+        <div class="player-controls">
+            <i class="fas fa-backward" id="prev" title="previous"></i>
+            <i class="fas fa-play main-button" id="play" title="play"></i>
+            <i class="fas fa-forward" id="next" title="next"></i>
+        </div>
+    </div>
+    <!---Javascript-->
+    <script src="./script.js"></script>
+</body>
+
+</html>
